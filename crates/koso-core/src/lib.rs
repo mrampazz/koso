@@ -12,6 +12,6 @@ pub mod config;
 pub mod event;
 pub mod types;
 
-pub use config::Config;
+pub use config::{config_path, Config, ConfigOverrides};
 pub use event::{Event, EventBus};
 pub use types::{Block, BlockKind, Command};
