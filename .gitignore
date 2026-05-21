@@ -4,8 +4,5 @@
 *.swo
 .DS_Store
 
-# OpenCode local state
-.opencode/
-
-# Local plans (session-specific)
+# Local plans (session-specific, created by pairing-companion)
 plans/

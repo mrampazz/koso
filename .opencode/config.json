@@ -1,0 +1,28 @@
+{
+  "repo": "mrampazz/koso",
+  "epicLabel": "epic",
+  "crates": [
+    "koso-core",
+    "koso-tui",
+    "koso-mux",
+    "koso-ai",
+    "koso-complete",
+    "koso-plugin"
+  ],
+  "testCommand": "cargo test --workspace",
+  "checkCommand": "cargo check --workspace",
+  "buildCommand": "cargo build --workspace",
+  "projectBoard": {
+    "name": "",
+    "number": null,
+    "id": "",
+    "statusFieldId": "",
+    "statusOptions": {
+      "backlog": "",
+      "refined": "",
+      "inProgress": "",
+      "inReview": "",
+      "done": ""
+    }
+  }
+}
