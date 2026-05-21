@@ -3,3 +3,9 @@
 *.swp
 *.swo
 .DS_Store
+
+# OpenCode local state
+.opencode/
+
+# Local plans (session-specific)
+plans/
