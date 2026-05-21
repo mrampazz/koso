@@ -35,7 +35,7 @@ thiserror = "2"
 
 # Logging
 tracing = "0.1"
-tracing-subscriber = "0.3"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
 
 # PTY
 portable-pty = "0.8"
@@ -50,6 +50,10 @@ wasmtime = "29"
 tree-sitter = "0.24"
 tree-sitter-highlight = "0.24"
 
+# CLI
+clap = { version = "4", features = ["derive"] }
+dirs = "6"
+
 # Internal crates
 koso-core = { path = "crates/koso-core" }
 koso-tui = { path = "crates/koso-tui" }
@@ -57,3 +61,6 @@ koso-mux = { path = "crates/koso-mux" }
 koso-ai = { path = "crates/koso-ai" }
 koso-complete = { path = "crates/koso-complete" }
 koso-plugin = { path = "crates/koso-plugin" }
+
+# Testing
+tempfile = "3"

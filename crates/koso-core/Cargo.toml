@@ -14,3 +14,7 @@ thiserror = { workspace = true }
 tracing = { workspace = true }
 tokio = { workspace = true }
 crossterm = { workspace = true }
+dirs = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }
