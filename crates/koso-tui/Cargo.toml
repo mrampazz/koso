@@ -1,0 +1,23 @@
+[package]
+name = "koso-tui"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "TUI rendering layer for Koso — layout, widgets, and input handling"
+
+[[bin]]
+name = "koso"
+path = "src/main.rs"
+
+[dependencies]
+koso-core = { workspace = true }
+koso-mux = { workspace = true }
+koso-ai = { workspace = true }
+koso-complete = { workspace = true }
+koso-plugin = { workspace = true }
+ratatui = { workspace = true }
+crossterm = { workspace = true }
+tokio = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }

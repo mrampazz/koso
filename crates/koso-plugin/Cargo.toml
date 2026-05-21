@@ -1,0 +1,15 @@
+[package]
+name = "koso-plugin"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "WASM-based plugin system for Koso — custom completions, output renderers, and AI backends"
+
+[dependencies]
+koso-core = { workspace = true }
+wasmtime = { workspace = true }
+tokio = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }

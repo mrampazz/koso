@@ -1,0 +1,13 @@
+[package]
+name = "koso-complete"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Context-aware autocompletion — commands, flags, paths, git branches, k8s resources, and more"
+
+[dependencies]
+koso-core = { workspace = true }
+tokio = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+serde = { workspace = true }

@@ -1,0 +1,59 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/koso-core",
+    "crates/koso-tui",
+    "crates/koso-mux",
+    "crates/koso-ai",
+    "crates/koso-complete",
+    "crates/koso-plugin",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+repository = "https://github.com/mrampazz/koso"
+description = "構想 — A modern TUI terminal multiplexer with block-based output, structured data rendering, and pluggable AI integration"
+
+[workspace.dependencies]
+# TUI
+ratatui = "0.29"
+crossterm = "0.28"
+
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+
+# Error handling
+anyhow = "1"
+thiserror = "2"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = "0.3"
+
+# PTY
+portable-pty = "0.8"
+
+# AI / HTTP
+reqwest = { version = "0.12", features = ["json", "stream"] }
+
+# Plugin system
+wasmtime = "29"
+
+# Tree-sitter (syntax highlighting)
+tree-sitter = "0.24"
+tree-sitter-highlight = "0.24"
+
+# Internal crates
+koso-core = { path = "crates/koso-core" }
+koso-tui = { path = "crates/koso-tui" }
+koso-mux = { path = "crates/koso-mux" }
+koso-ai = { path = "crates/koso-ai" }
+koso-complete = { path = "crates/koso-complete" }
+koso-plugin = { path = "crates/koso-plugin" }
